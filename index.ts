@@ -1,15 +1,20 @@
-// let userName: string = 'Ivan';
+const isBirthdayData: boolean = true;
+let ageData: number = 40;
+const userNameData: string = 'Ivan';
 
-// userName = 5;
-
-// userName.isInteger()
-
-const isBirthday: boolean = true;
-let age: number;
-const userName: string = 'Ivan';
-
-age = 40;
-
-if (isBirthday) {
-  console.log(`Congrats ${userName.toUpperCase()}, age: ${age + 1}`);
+// function logBrtMsg(isBirthday: boolean, age: number, userName: string): string {
+//   if (isBirthday) {
+//     return `Congrats ${userName.toUpperCase()}, age: ${age + 1}`;
+//   } else {
+//     return 'Error';
+//   }
+// }
+const logBrtMsg = (isBirthday: boolean, age: number, userName: string): string => {
+  if (isBirthday) {
+    return `Congrats ${userName.toUpperCase()}, age: ${age + 1}`;
+  } else {
+    return 'Error';
+  }
 }
+
+logBrtMsg(isBirthdayData, ageData, userNameData);
